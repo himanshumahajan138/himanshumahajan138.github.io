@@ -4,7 +4,7 @@ import { HomeIcon } from "lucide-react";
 export const DATA = {
   name: "Himanshu Mahajan",
   initials: "HM",
-  url: "https://himanshumahajan.dev",
+  url: "https://himanshumahajan138.github.io",
   location: "India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
@@ -49,19 +49,19 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/himanshumahajan138",
+        url: "https://linkedin.com/in/himanshu138",
         icon: Icons.linkedin,
         navbar: true,
       },
       LeetCode: {
         name: "LeetCode",
-        url: "https://leetcode.com/u/himanshumahajan138",
+        url: "https://leetcode.com/u/himanshu_138",
         icon: Icons.leetcode,
         navbar: true,
       },
       CodeChef: {
         name: "CodeChef",
-        url: "https://www.codechef.com/users/himanshumahajan",
+        url: "https://www.codechef.com/users/himanshu138",
         icon: Icons.codechef,
         navbar: true,
       },
@@ -103,7 +103,7 @@ export const DATA = {
     },
     {
       company: "NARRIS",
-      href: "#",
+      href: "https://www.narris.io",
       badges: [],
       location: "Remote",
       title: "AI Engineer",
@@ -116,7 +116,7 @@ export const DATA = {
     },
     {
       company: "BOTRIC",
-      href: "#",
+      href: "https://www.botric.ai",
       badges: [],
       location: "Remote",
       title: "SWE Intern - AI/ML",
@@ -140,7 +140,7 @@ export const DATA = {
     },
     {
       school: "Kendriya Vidyalaya No. 2, Pathankot",
-      href: "#",
+      href: "https://no2pathankot.kvs.ac.in",
       degree: "Class XII (CBSE) — Non-Medical — 91.2%",
       logoUrl: "",
       icon: Icons.college,
@@ -508,12 +508,12 @@ export const DATA = {
         {
           title: "LeetCode",
           icon: <Icons.leetcode className="h-4 w-4" />,
-          href: "https://leetcode.com/u/himanshumahajan138",
+          href: "https://leetcode.com/u/himanshu_138",
         },
         {
           title: "CodeChef",
           icon: <Icons.codechef className="h-4 w-4" />,
-          href: "https://www.codechef.com/users/himanshumahajan",
+          href: "https://www.codechef.com/users/himanshu138",
         },
       ],
     },
