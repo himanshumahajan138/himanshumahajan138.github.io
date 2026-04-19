@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const t=['Imagina-AI','TransVox','WebSlayer','PlagX']; t.forEach\\(s=>{const h=[...s].reduce\\(\\(a,c\\)=>a+c.charCodeAt\\(0\\),0\\)+s.length*11; console.log\\(s, h, h%5\\)}\\)\")"
+    ]
+  }
+}

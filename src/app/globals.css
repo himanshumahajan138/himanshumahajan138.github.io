@@ -234,3 +234,77 @@
   }
 
 }
+
+@keyframes blob-drift-a {
+  0%, 100% { transform: translate3d(0%, 0%, 0) scale(1); }
+  33%      { transform: translate3d(18%, -12%, 0) scale(1.12); }
+  66%      { transform: translate3d(-12%, 16%, 0) scale(0.94); }
+}
+
+@keyframes blob-drift-b {
+  0%, 100% { transform: translate3d(0%, 0%, 0) scale(1); }
+  33%      { transform: translate3d(-16%, 14%, 0) scale(1.08); }
+  66%      { transform: translate3d(14%, -16%, 0) scale(0.92); }
+}
+
+@keyframes blob-drift-c {
+  0%, 100% { transform: translate3d(0%, 0%, 0) scale(1); }
+  50%      { transform: translate3d(10%, -18%, 0) scale(1.15); }
+}
+
+@keyframes shimmer-sweep {
+  0%   { transform: translateX(-120%) skewX(-12deg); }
+  100% { transform: translateX(220%) skewX(-12deg); }
+}
+
+@keyframes hue-breathe {
+  0%, 100% { filter: hue-rotate(0deg) saturate(1); }
+  50%      { filter: hue-rotate(80deg) saturate(1.15); }
+}
+
+@keyframes ripple-burst {
+  0%   { width: 0; height: 0; opacity: 0.55; border-width: 3px; }
+  100% { width: 700px; height: 700px; opacity: 0; border-width: 1px; }
+}
+
+.placeholder-card .blob-a { animation: blob-drift-a 10s ease-in-out infinite; }
+.placeholder-card .blob-b { animation: blob-drift-b 12s ease-in-out infinite; animation-delay: -3s; }
+.placeholder-card .blob-c { animation: blob-drift-c 14s ease-in-out infinite; animation-delay: -6s; }
+
+.placeholder-card:hover .blob-a { animation-duration: 3.5s; }
+.placeholder-card:hover .blob-b { animation-duration: 4s; }
+.placeholder-card:hover .blob-c { animation-duration: 4.5s; }
+
+.placeholder-card .hue-shifter {
+  animation: hue-breathe 14s ease-in-out infinite;
+}
+
+.placeholder-card .shimmer-sweep {
+  animation: shimmer-sweep 1.8s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.placeholder-card:hover .shimmer-sweep {
+  animation-play-state: running;
+}
+
+.ripple-burst {
+  position: absolute;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  background: radial-gradient(circle, rgba(255,255,255,0.18), transparent 65%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: ripple-burst 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .placeholder-card .blob-a,
+  .placeholder-card .blob-b,
+  .placeholder-card .blob-c,
+  .placeholder-card .shimmer-sweep,
+  .placeholder-card .hue-shifter,
+  .ripple-burst {
+    animation: none !important;
+  }
+}

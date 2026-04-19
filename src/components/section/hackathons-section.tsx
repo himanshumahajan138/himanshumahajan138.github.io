@@ -19,7 +19,7 @@ export default function HackathonsSection() {
           <div className="flex flex-col gap-y-3 items-center justify-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">I love open source</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-              65+ merged PRs across LFortran, Mill, InVesalius, spotDL,
+              70+ merged PRs across LFortran, Mill, InVesalius, spotDL,
               MetaGPT, and more. Earned ₹5 Lac+ through bounties.
               Here&apos;s my journey.
             </p>
@@ -35,6 +35,10 @@ export default function HackathonsSection() {
                     alt={hackathon.title}
                     className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
                   />
+                ) : hackathon.icon ? (
+                  <div className="size-10 bg-card z-10 shrink-0 p-1.5 border rounded-full shadow ring-2 ring-border flex items-center justify-center flex-none text-foreground">
+                    <hackathon.icon className="size-full" />
+                  </div>
                 ) : (
                   <div className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border flex-none" />
                 )}

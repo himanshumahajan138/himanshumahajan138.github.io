@@ -1,7 +1,5 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
-import { Python } from "@/components/ui/svgs/python";
-import { Docker } from "@/components/ui/svgs/docker";
 
 export const DATA = {
   name: "Himanshu Mahajan",
@@ -10,33 +8,33 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
-    "Software Engineer specializing in AI/ML, Scalable Systems, and Open Source. Active contributor with 65+ merged PRs.",
+    "AI engineer by trade, builder by instinct — shipping production AI systems, contributing to compilers, and writing code that earns its keep.",
   summary:
-    "I build production systems that deliver measurable impact — from **RAG pipelines processing 50k+ data points** to **AI platforms automating 100+ video productions**. Active open-source contributor with [65+ merged PRs](https://github.com/himanshumahajan138) across **LFortran**, **Mill**, **InVesalius**, **spotDL**, and more — including paid bounties earning **₹5 Lac+**. Passionate about pushing the boundaries of AI/ML engineering and building scalable systems.",
+    "Most of my work lives where AI meets production — shipping **RAG pipelines** and **serverless backends** that handle real traffic. The rest lives in open source: [70+ merged PRs](https://github.com/himanshumahajan138) across **LFortran**, **Mill**, **InVesalius**, and **spotDL**, including paid bounty work on the **Mill** build tool. I'm drawn to compilers, build systems, and the messy internals most people skip — the code that holds up when everything around it is moving.",
   avatarUrl: "/me.png",
   skills: [
-    { name: "Python", icon: Python },
-    { name: "C++", icon: undefined },
-    { name: "Scala", icon: undefined },
-    { name: "SQL", icon: undefined },
-    { name: "PyTorch", icon: undefined },
-    { name: "TensorFlow", icon: undefined },
-    { name: "Scikit-Learn", icon: undefined },
-    { name: "Transformers", icon: undefined },
-    { name: "LLM Fine-Tuning", icon: undefined },
-    { name: "RAG", icon: undefined },
-    { name: "LangChain", icon: undefined },
-    { name: "Generative AI", icon: undefined },
-    { name: "Transfer Learning", icon: undefined },
-    { name: "FastAPI", icon: undefined },
-    { name: "Docker", icon: Docker },
-    { name: "AWS Lambda", icon: undefined },
-    { name: "Pinecone", icon: undefined },
-    { name: "Serverless", icon: undefined },
-    { name: "Git", icon: undefined },
-    { name: "Streamlit", icon: undefined },
-    { name: "FFmpeg", icon: undefined },
-    { name: "OpenCV", icon: undefined },
+    { name: "Python", icon: Icons.python },
+    { name: "C++", icon: Icons.cpp },
+    { name: "Scala", icon: Icons.scala },
+    { name: "SQL", icon: Icons.sql },
+    { name: "PyTorch", icon: Icons.pytorch },
+    { name: "TensorFlow", icon: Icons.tensorflow },
+    { name: "Scikit-Learn", icon: Icons.scikitLearn },
+    { name: "Transformers", icon: Icons.huggingface },
+    { name: "LLM Fine-Tuning", icon: Icons.llm },
+    { name: "RAG", icon: Icons.rag },
+    { name: "LangChain", icon: Icons.langchain },
+    { name: "Generative AI", icon: Icons.genAI },
+    { name: "Transfer Learning", icon: Icons.transferLearning },
+    { name: "FastAPI", icon: Icons.fastapi },
+    { name: "Docker", icon: Icons.docker },
+    { name: "AWS Lambda", icon: Icons.awsLambda },
+    { name: "Pinecone", icon: Icons.pinecone },
+    { name: "Serverless", icon: Icons.serverless },
+    { name: "Git", icon: Icons.git },
+    { name: "Streamlit", icon: Icons.streamlit },
+    { name: "FFmpeg", icon: Icons.ffmpeg },
+    { name: "OpenCV", icon: Icons.opencv },
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -58,7 +56,13 @@ export const DATA = {
       LeetCode: {
         name: "LeetCode",
         url: "https://leetcode.com/u/himanshumahajan138",
-        icon: Icons.globe,
+        icon: Icons.leetcode,
+        navbar: true,
+      },
+      CodeChef: {
+        name: "CodeChef",
+        url: "https://www.codechef.com/users/himanshumahajan",
+        icon: Icons.codechef,
         navbar: true,
       },
       email: {
@@ -77,7 +81,8 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Data Scientist",
-      logoUrl: "",
+      logoUrl: "", // "https://www.iotric.com/wp-content/uploads/2023/02/New-logo.png",
+      icon: Icons.iot,
       start: "Nov 2025",
       end: "Present",
       description:
@@ -89,7 +94,8 @@ export const DATA = {
       badges: ["Contract"],
       location: "Remote",
       title: "AI Training & Code Review Specialist",
-      logoUrl: "",
+      logoUrl: "", // "https://website-media.deel.com/logo_revamp_164ddaed0c.svg",
+      icon: Icons.deel,
       start: "Sep 2025",
       end: "Present",
       description:
@@ -102,6 +108,7 @@ export const DATA = {
       location: "Remote",
       title: "AI Engineer",
       logoUrl: "",
+      icon: Icons.narris,
       start: "Jun 2025",
       end: "Oct 2025",
       description:
@@ -113,7 +120,8 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "SWE Intern - AI/ML",
-      logoUrl: "",
+      logoUrl: "", // "https://www.botric.ai/logo.svg",
+      icon: Icons.botric,
       start: "Sep 2024",
       end: "Apr 2025",
       description:
@@ -125,16 +133,26 @@ export const DATA = {
       school: "Sardar Beant Singh State University",
       href: "https://www.sbssugsp.ac.in",
       degree: "B.CSE (Computer Science & Engineering) — CGPA 8.85",
-      logoUrl: "",
+      logoUrl: "", //"https://www.sbssugsp.ac.in/assets/images/logo/beantunilogo.png",
+      icon: Icons.college,
       start: "2021",
       end: "2025",
+    },
+    {
+      school: "Kendriya Vidyalaya No. 2, Pathankot",
+      href: "#",
+      degree: "Class XII (CBSE) — Non-Medical — 91.2%",
+      logoUrl: "",
+      icon: Icons.college,
+      start: "2019",
+      end: "2021",
     },
   ],
   projects: [
     {
       title: "Imagina-AI",
       href: "https://github.com/himanshumahajan138/Imagina-AI",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "AI-powered image generation platform leveraging state-of-the-art diffusion models. Features text-to-image generation with customizable parameters, style transfer, and batch processing capabilities.",
@@ -154,11 +172,12 @@ export const DATA = {
       ],
       image: "",
       video: "",
+      icon: "sparkles",
     },
     {
       title: "TransVox",
       href: "https://github.com/himanshumahajan138/TransVox",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Real-time voice translation application supporting multiple languages. Uses speech recognition, neural machine translation, and text-to-speech synthesis for seamless cross-language communication.",
@@ -178,6 +197,33 @@ export const DATA = {
       ],
       image: "",
       video: "",
+      icon: "languages",
+    },
+    {
+      title: "WebSlayer",
+      href: "https://github.com/himanshumahajan138/webslayer",
+      dates: "2025",
+      active: true,
+      description:
+        "AI-powered web companion that crawls any webpage, builds semantic understanding via vector embeddings, and delivers contextual RAG conversations. Combines Gradio, Weaviate, LangChain, and Gemini into an enterprise-grade RAG pipeline.",
+      technologies: [
+        "Python",
+        "RAG",
+        "LangChain",
+        "Weaviate",
+        "Gemini",
+        "Gradio",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/himanshumahajan138/webslayer",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+      icon: "globe",
     },
     {
       title: "PlagX",
@@ -202,30 +248,7 @@ export const DATA = {
       ],
       image: "",
       video: "",
-    },
-    {
-      title: "FraudGuard",
-      href: "https://github.com/himanshumahajan138/FraudGuard",
-      dates: "2024",
-      active: true,
-      description:
-        "ML-based fraud detection system for financial transactions. Implements ensemble methods and anomaly detection algorithms to identify fraudulent patterns in real-time.",
-      technologies: [
-        "Python",
-        "Scikit-Learn",
-        "XGBoost",
-        "Pandas",
-        "Streamlit",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/himanshumahajan138/FraudGuard",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
+      icon: "scansearch",
     },
   ],
   hackathons: [
@@ -236,66 +259,72 @@ export const DATA = {
       description:
         "Active contributor to LFortran, a modern interactive Fortran compiler built on LLVM. Contributed LSP hover improvements, parser fixes, edit descriptor handling, COMMON block fixes, and PDT enhancements.",
       image: "",
+      icon: Icons.fortran,
       links: [
         {
           title: "LSP Hover Type Kind",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10863",
         },
         {
           title: "Integer Edit Descriptor Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10771",
         },
         {
           title: "Parse Flush Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10770",
         },
         {
           title: "Slash Edit Descriptor",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10658",
         },
         {
           title: "Man Page Flag Docs",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10612",
         },
         {
           title: "COMMON Block Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10591",
         },
         {
           title: "PDT Struct Import",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10459",
         },
         {
           title: "LSP Document Symbols",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10984",
         },
         {
           title: "LSP Outline Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10970",
         },
         {
           title: "LSP Dimension Hover",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10891",
         },
         {
           title: "Precision Warning",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10618",
         },
         {
           title: "Implied Do Loop Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.fortran className="h-4 w-4" />,
           href: "https://github.com/lfortran/lfortran/pull/10479",
+        },
+        {
+          title: "View All PRs",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/lfortran/lfortran/pulls?q=is%3Apr+author%3Ahimanshumahajan138",
         },
       ],
     },
@@ -306,36 +335,42 @@ export const DATA = {
       description:
         "Contributor to InVesalius, open-source medical imaging software for 3D reconstruction. Enhanced status bar functionality, fixed interpolation rendering, and improving code quality across the codebase.",
       image: "",
+      icon: Icons.invesalius,
       links: [
         {
           title: "Status Bar Enhancement",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.invesalius className="h-4 w-4" />,
           href: "https://github.com/invesalius/invesalius3/pull/1187",
         },
         {
           title: "Interpolation Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.invesalius className="h-4 w-4" />,
           href: "https://github.com/invesalius/invesalius3/pull/1151",
         },
         {
           title: "File I/O Context Managers",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.invesalius className="h-4 w-4" />,
           href: "https://github.com/invesalius/invesalius3/pull/1203",
         },
         {
           title: "Dictionary Parameter Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.invesalius className="h-4 w-4" />,
           href: "https://github.com/invesalius/invesalius3/pull/1196",
         },
         {
           title: "Loop & Division Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.invesalius className="h-4 w-4" />,
           href: "https://github.com/invesalius/invesalius3/pull/1176",
         },
         {
           title: "Rust Extension Guards",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.invesalius className="h-4 w-4" />,
           href: "https://github.com/invesalius/invesalius3/pull/1165",
+        },
+        {
+          title: "View All PRs",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/invesalius/invesalius3/pulls?q=is%3Apr+author%3Ahimanshumahajan138",
         },
       ],
     },
@@ -346,56 +381,62 @@ export const DATA = {
       description:
         "Major contributor to Mill, a fast multi-language build tool by Li Haoyi. Added first-class Python support across examples, testing, modules, web, and documentation. Also contributed Kotlin Spring Boot, Android Java, and Android Kotlin examples.",
       image: "",
+      icon: Icons.mill,
       links: [
         {
           title: "Python Testing",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/4166",
         },
         {
           title: "Python Web Examples",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/4107",
         },
         {
           title: "Python Docs Rewrite",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/4063",
         },
         {
           title: "Python Modules",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/4058",
         },
         {
           title: "Python Basic Support",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/4000",
         },
         {
           title: "Kotlin Spring Boot",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/3965",
         },
         {
           title: "Android Bundle",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/3935",
         },
         {
           title: "Python Case Study",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/3882",
         },
         {
           title: "Android Kotlin Example",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/3679",
         },
         {
           title: "Android Java Example",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.mill className="h-4 w-4" />,
           href: "https://github.com/com-lihaoyi/mill/pull/3659",
+        },
+        {
+          title: "View All PRs",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/com-lihaoyi/mill/pulls?q=is%3Apr+author%3Ahimanshumahajan138",
         },
       ],
     },
@@ -406,31 +447,32 @@ export const DATA = {
       description:
         "Contributed to various notable projects including Meshery (cloud native management), scautable (Scala tables), spotDL (music downloader), MetaGPT (AI agents framework), and VATSIM UK Sector File.",
       image: "",
+      icon: Icons.openSource,
       links: [
         {
-          title: "Meshery — Attendance",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/meshery/meshery/pull/14849",
-        },
-        {
           title: "scautable — File Type Check",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.scala className="h-4 w-4" />,
           href: "https://github.com/Quafadas/scautable/pull/32",
         },
         {
           title: "spotDL — Skip Duplicates",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.spotify className="h-4 w-4" />,
           href: "https://github.com/spotDL/spotify-downloader/pull/2214",
         },
         {
+          title: "VATSIM — TACAN Updates",
+          icon: <Icons.vatsim className="h-4 w-4" />,
+          href: "https://github.com/VATSIM-UK/UK-Sector-File/pull/5470",
+        },
+        {
           title: "MetaGPT — Docs Fix",
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.metagpt className="h-4 w-4" />,
           href: "https://github.com/FoundationAgents/MetaGPT/pull/1509",
         },
         {
-          title: "VATSIM — TACAN Updates",
+          title: "View All PRs",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/VATSIM-UK/UK-Sector-File/pull/5470",
+          href: "https://github.com/search?q=is%3Apr+author%3Ahimanshumahajan138&type=pullrequests",
         },
       ],
     },
@@ -441,6 +483,7 @@ export const DATA = {
       description:
         "Successfully completed Hacktoberfest 2024 by contributing meaningful pull requests to multiple open source repositories. Focused on compiler tooling and build system improvements.",
       image: "",
+      icon: Icons.hacktoberfest,
       links: [],
     },
     {
@@ -450,6 +493,7 @@ export const DATA = {
       description:
         "Selected as a finalist in Smart India Hackathon (SIH) 2023, one of India's largest hackathons organized by the Government of India. Competed among thousands of teams nationwide.",
       image: "",
+      icon: Icons.sih,
       links: [],
     },
     {
@@ -459,15 +503,16 @@ export const DATA = {
       description:
         "CodeChef 3-Star rated programmer. LeetCode Knight badge holder. Consistently solving algorithmic challenges and participating in competitive programming contests.",
       image: "",
+      icon: Icons.competitive,
       links: [
         {
           title: "LeetCode",
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.leetcode className="h-4 w-4" />,
           href: "https://leetcode.com/u/himanshumahajan138",
         },
         {
           title: "CodeChef",
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.codechef className="h-4 w-4" />,
           href: "https://www.codechef.com/users/himanshumahajan",
         },
       ],
